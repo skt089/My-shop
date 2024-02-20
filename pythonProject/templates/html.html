@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="display-4 animate__animated animate__fadeInDown">Добро пожаловать в My Shop!</h1>
+
+    <div class="row mt-5">
+        <img src="https://prismplus.sg/cdn/shop/files/Q55-QEa_800x.jpg?v=1682525755">
+            <div class="col-md-4 mb-4">
+                <div class="card animate__animated animate__fadeIn">
+                    <div class="card-body">
+                        <h5 class="card-title">TV</h5>
+                        <p class="card-text">599.99$</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2 class="animate__animated animate__fadeInLeft">Добавить новый товар</h2>
+            <form method="post" action="/add_product">
+                <div class="form-group">
+                    <label for="name">Название товара:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Цена:</label>
+                    <input type="number" class="form-control" id="price" name="price" step="0.01" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Добавить товар</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
